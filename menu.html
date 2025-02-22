@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Food Menu</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <header>
-        <li><a href="menu.html?style=Chinese">Chinese</a></li>
-        <li><a href="menu.html?style=Japanese">Japanese</a></li>
-    </header>
+<header class="menubar">
+    <ul class="right">
+        <li><a class="home" href="index.html">Home</a></li>
+    </ul>
+
+    <ul class="left">
+        <li><a href="shoppinglist.html">Shoppinglist</a></li>
+        <li><a href="admin.html">Admin</a></li>
+    </ul>
+        
+</header>
+
+<body>
+
+    <ul class="options-container">
+        <p id="menuHeader"></p>
+        <button onclick="location.href='menu.html?style=Chinese'">Chinese</button>
+        <button onclick="location.href='menu.html?style=Japanese'">Japanese</button>
+        <button onclick="location.href='menu.html?style=UK'">UK</button>
+    </ul>
+
+    <ul class="calendar1">
+        <button class="Delete" onclick="deleteitem()">Delete</button>
+        <button class="edit" onclick="additem()">Edit</button>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+
+    <script src="index.js"></script> 
+</body>
+
+
+<script src="index.js"></script>
+</body>
+</html>
