@@ -1,17 +1,21 @@
 
-body {
+
+
+body{
     margin:0 ;
     padding: 0;
-    background-image: url(pexels-ella-olsson-572949-1640773.jpg);
+    background-image: url(png/pexels-ella-olsson-572949-1640773.jpg);
     background-size:120%;
 }
+
+
 
 header {
 
     background-color: #333;
     text-align: center;
     width: 100%;
-    padding: 18px 0px;
+    padding: 18px 1px;
     display:flex;
     justify-content: space-between;
     font-size: 130%;
@@ -20,19 +24,27 @@ header {
 
 }
 
-.left, .right {
+.left, .right, #meanuHeader {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display:flex;
 }
 
-.left li, .right li {
+.left li, .right li, #menuHeader{
     margin: 0 10px;
 }
 
 .right a {
     margin-left: 20px;
+}
+
+.options-container #menuHeader {
+    color: #333;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 0%;
+    text-align: center;
 }
 
 .menubar a {
@@ -45,7 +57,7 @@ header {
 
 
 
-.sidebar button {
+.options-container button {
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     /*font-weight: bold;*/
@@ -63,7 +75,7 @@ header {
 
 
 
-.sidebar {
+.options-container {
     opacity:0.8;
 
     /*backdrop-filter: blur(10px);*/
@@ -93,7 +105,6 @@ header {
 .calendar1 button {
     margin: 10px;
     margin-right: 20px;
-    width: 7%;
     float:right;
     border: none;
     background-color:aliceblue;
