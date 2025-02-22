@@ -1,0 +1,108 @@
+
+body {
+    margin:0 ;
+    padding: 0;
+    background-image: url(png/pexels-ella-olsson-572949-1640773.jpg);
+    background-size:120%;
+}
+
+header {
+
+    background-color: #333;
+    text-align: center;
+    width: 100%;
+    padding: 18px 0px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 130%;
+    opacity:0.8;
+    position:static;
+
+}
+
+.left, .right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+
+.left li, .right li {
+    margin: 0 10px;
+}
+
+.right a {
+    margin-left: 20px;
+}
+
+.menubar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+
+
+
+
+.sidebar button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    /*font-weight: bold;*/
+    opacity:0.7;
+    background-color: #333;
+    color:aliceblue;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 40px;
+    display: block; /*display verticle*/
+}
+
+
+
+.sidebar {
+    opacity:0.8;
+
+    /*backdrop-filter: blur(10px);*/
+    background-color: aliceblue;
+    width: 100px;
+    margin-top: 0%;
+    height: 100%;
+    padding: 20px;
+    position:absolute;
+}
+
+.calendar1 {
+    background-color: #333;
+    opacity:0.9;
+    color: aliceblue;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 65%;
+    height: 50%;
+    border-radius: 10px;
+    position:relative;
+
+}
+
+.calendar1 button {
+    margin: 10px;
+    margin-right: 20px;
+    width: 7%;
+    float:right;
+    border: none;
+    background-color:aliceblue;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.calendar1 li {
+    padding: 7px;
+}
+

@@ -1,0 +1,114 @@
+/* Reset some default styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styles */
+header  {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Calendar styles */
+.calendar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#monthYear {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Days container styles */
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.day {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Add event section styles */
+.add-event {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-event input[type="date"],
+.add-event input[type="text"] {
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.add-event button {
+    background: #2196F3;
+}
+
+.add-event button:hover {
+    background: #1E88E5;
+}
