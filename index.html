@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Food Menu</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <header class="menubar">
         <ul class="right">
-            <li><a href="index.html">Home</a></li>
+            <li><a class="home" href="index.html">Home</a></li>
         </ul>
 
         <ul class="left">
@@ -27,8 +28,15 @@
             <button onclick="location.href='menu.html?style=UK'">UK</button>
         </ul>
 
-        
+        <ul class="calendar1">
+            <button class="Delete" onclick="deleteitem()">Delete</button>
+            <button class="edit" onclick="additem()">Edit</button>
 
-        <script src="index.html"></script> 
+            
+            <li>1</li>
+            <li>2</li>
+        </ul>
+
+        <script src="index.js"></script> 
     </body>
 </html>
