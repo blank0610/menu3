@@ -9,11 +9,7 @@ const menuData = {
         { name: "Ramen", recipe: "Noodles, broth, meat, vegetables." },
         { name: "Tempura", recipe: "Battered and fried vegetables or seafood." },
     ],
-    Italian: [
-        { name: "Spaghetti Carbonara", recipe: "Pasta, eggs, cheese, pancetta." },
-        { name: "Margherita Pizza", recipe: "Pizza dough, mozzarella, tomatoes, basil." },
-        { name: "Tiramisu", recipe: "Coffee, mascarpone, cocoa." },
-    ],
+
 };
 
 const urlParams = new URLSearchParams(window.location.search);
