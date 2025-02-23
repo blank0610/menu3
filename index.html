@@ -6,13 +6,14 @@
         <title>Food Menu</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
 
     <header class="menubar">
         <ul class="right">
             <li><a class="home" href="index.html">Home</a></li>
         </ul>
-
         <ul class="left">
             <li><a href="shoppinglist.html">Shoppinglist</a></li>
             <li><a href="admin.html">Admin</a></li>
@@ -28,11 +29,16 @@
             <button onclick="location.href='menu.html?style=UK'">UK</button>
         </ul>
 
-        <ul class="calendar1">
-            <button class="Delete" onclick="deleteitem()">Delete</button>
-            <button class="edit" onclick="additem()">Edit</button>
-            <li>1</li>
-            <li>2</li>
+
+        <ul class="calendar">
+            <button id="indexdelete" class="delete" onclick="deleteitem()"><i class="fas fa-edit"></i> </button>
+            <button id="indexedit" class="edit" onclick="additem()"><i class="fas fa-trash"></i></button>
+
+
+
+        </ul>
+
+
         </ul>
 
         <script src="index.js"></script> 
