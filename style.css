@@ -2,12 +2,18 @@
 body{
     margin:0 0;
     padding: 0 0;
-    background-image: url(pexels-ella-olsson-572949-1640773.jpg);
+    background-image: url(png/pexels-ella-olsson-572949-1640773.jpg);
     background-size:120%;
     position: fixed;
 }
 
-
+@media (orientation:portrait) {body{
+    margin:0 0;
+    padding: 0 0;
+    background-image: url(png/vertical.jpg);
+    background-size:120%;
+    position: fixed;
+}}
 
 header {
 
@@ -40,6 +46,13 @@ header {
     margin-left: 20px;
 }
 
+.menubar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 90%
+}
+
 .options-container {
     opacity: 85%;
     /*backdrop-filter: blur(10px);*/
@@ -51,18 +64,17 @@ header {
     position:fixed;
 }
 
-.options-container #menuHeader {
+.options-container{
     color: #333;
+    font-size: 100%;
     font-weight: bold;
-    font-size: x-large;
     margin-top: 0%;
     text-align: center;
 }
 
-.menubar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
+.options-container p {
+    font-weight:bolder;
+    font-size:large;
 }
 
 
