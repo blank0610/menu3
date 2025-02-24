@@ -18,7 +18,7 @@ document.getElementById('menuHeader').innerText = style + ' Menu';
 
 const menuContainer = document.getElementById('menuContainer');
 menuData[style].forEach(item => {
-    const div = document.createElement('div');
+    const div = document.createElement('foodbox');
     div.className = 'menu-item';
     div.innerHTML = `<h3>${item.name}</h3><p>${item.recipe}</p><button onclick="addToCalendar('${item.name}')">Add to Calendar</button>`;
     menuContainer.appendChild(div);
