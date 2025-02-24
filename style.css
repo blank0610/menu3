@@ -1,103 +1,147 @@
-
 body{
-    margin:0 0;
-    padding: 0 0;
-    background-image: url(pexels-ella-olsson-572949-1640773.jpg);
+    margin:0px 0px;
+    padding: 0px 0px;
+    background-image: url(png/pexels-ella-olsson-572949-1640773.jpg);
     background-size:120%;
-    position: fixed;
+    background-repeat: no-repeat;
 }
-
-@media (orientation:portrait) {body{
-    margin:0 0;
-    padding: 0 0;
-    background-image: url(vertical.jpg);
-    background-size:120%;
-    position: fixed;
-}}
 
 header {
 
     background-color: #333;
     text-align: center;
-    height: 20px;
-    width: 100vw;
-    padding: 18px 1px;
+    width: auto;
+    height: auto;
+    margin: 0px 0px;
+    padding: 10px 1px;
     display:flex;
     justify-content: space-between;
-    font-size: 130%;
+    font-size: 80%;
     opacity:0.8;
-    position: relative;
-
 }
 
-
-.left, .right, #meanuHeader {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display:flex;
+.left, .right, #menuHeader {
+    list-style-type: none; /*remove word style*/
+    margin: 0%;
+    padding: 0%;
+    display: flex;
 }
 
-.left li, .right li, #menuHeader{
+.left li, .right li, #menuHeader {
     margin: 0 10px;
 }
 
 .right a {
-    margin-left: 20px;
+    right: auto;
 }
 
-.menubar a {
+.left a {
+    left: auto;
+}
+
+.topbar a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 90%
+    font-size: 80%
 }
 
 .options-container {
-    opacity: 85%;
-    /*backdrop-filter: blur(10px);*/
     background-color: aliceblue;
-    width: 100px;
-    height: 100vh;
-    margin-top: 0px;
-    padding: 20px;
-    position:fixed;
-}
-
-.options-container{
-    color: #333;
-    font-size: 100%;
-    font-weight: bold;
-    margin-top: 0%;
+    width: 100px; /* Fixed width for the sidebar */
+    height: 100%; /* Full viewport height */
+    opacity: 85%;
+    margin: 0px;
+    padding: 10px 0px;
     text-align: center;
+    position: absolute;
+    display: block;
 }
 
-.options-container p {
-    font-weight:bolder;
-    font-size:large;
+.options-container h2 {
+    font-size: 120%;
 }
 
-
-
-.options-container button {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    /*font-weight: bold;*/
-    background-color: #333;
-    color:aliceblue;
+.sidebar button {
+    display: block; /* Use block to stack buttons vertically */
     opacity: 0.9;
-    border: none;
-    padding: 15px 20px;
-    margin: 10px 0px;
-    width: 100%;
+    color: aliceblue;
+    background-color: #333;
+    border-radius: 20px; /* Slightly smaller radius for better fit */
+    margin: 10px auto; /* Center buttons */
+    padding: 10px 0; /* Vertical padding for height */
+    text-align: center;
     cursor: pointer;
-    border-radius: 40px;
-    display: block; /*display verticle*/
-    transition: background-color 0.3s;
+    border: none;
+    width: 80%; /* Use a percentage for consistent size */
+    max-height: 15%; /* Limit the height of buttons */
+    font-size: 80%; /* Consistent font size */
 }
 
-.options-container button:hover{
-    background-color: black;
+/* Optional: Add a hover effect */
+.sidebar button:hover {
+    background-color: black; /* Darker background on hover */
+}
+
+.main {
+    margin: 20px auto;
+    width: 40%;
+    height: auto;
+    opacity: 85%;
+
+
+}
+
+.main article {
+    text-align: center;
+    font-size: 90%;
+    padding: 10px;
+    border-bottom: 1px black;
 }
 
 
+/* from js*/
+
+#menuContainer {
+    display: grid; /* Use grid layout for menu items */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 30px; /* Increased space between items (was 20px) */
+    padding: 20px; /* Padding around the container */
+}
+
+.menu-item {
+    background-color: white; /* White background for menu items */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.menu-item:hover {
+    transform: scale(1.03); /* Slightly enlarge on hover */
+}
+
+.menu-item h3 {
+    margin: 0 0 10px; /* Space below the heading */
+    font-size: 1.2rem; /* Font size for dish name */
+}
+
+.menu-item p {
+    font-size: 0.9rem; /* Font size for recipe description */
+    margin: 0px 0px 10px; /* Space below the recipe */
+}
+
+.menu-item button {
+    background-color: #333; /* Button background */
+    color: aliceblue; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.menu-item button:hover {
+    background-color: black; /* Darker background on hover */
+}
