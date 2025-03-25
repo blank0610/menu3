@@ -1,65 +1,108 @@
 body{
     margin:0px 0px;
     padding: 0px 0px;
-    background-image: url(pexels-ella-olsson-572949-1640773.jpg);
-    background-size:120%;
+    background-size:cover;
+    background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
 }
 
 header {
-
-    background-color: #333;
-    text-align: center;
-    width: auto;
-    height: auto;
-    margin: 0px 0px;
-    padding: 10px 1px;
-    display:flex;
-    justify-content: space-between;
-    font-size: 80%;
-    opacity:0.8;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding */
+    height: 50px;
+    background-color: #333; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    opacity: 0.8;
 }
 
-.left, .right, #menuHeader {
-    list-style-type: none; /*remove word style*/
-    margin: 0%;
-    padding: 0%;
-    display: flex;
+.main {
+    overflow-y:visible;
+    overflow-x: hidden;
+    width: 90%;
+    height: 90%;
+    opacity: 85%;
+    margin: 0px 100px; /* Adjust margin as needed */
+    padding: 0px 0;
+    flex-grow: 1; /* Keep this to allow it to fill available space */
 }
 
-.left li, .right li, #menuHeader {
-    margin: 0 10px;
+.main::-webkit-scrollbar {
+    display: none;
 }
 
-.right a {
-    right: auto;
+.main-menu {
+    display: flex; /* Align menu items in a row */
 }
 
-.left a {
-    left: auto;
+.main-menu ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal alignment */
 }
 
-.topbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 80%
+.main-menu li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+.main-menu a {
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Set font size */
+    color: white; /* Text color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.main-menu a:hover {
+     transform: scale(1.03);
+}
+
+.calendar {
+    margin: 0;
+}
+
+.calendar button {
+    margin-top: 10px;
+}
+
+/* Home icon */
+.home {
+    margin-left: 13px;
+    font-size: 24px; /* Increase size for home icon */
+    color: white; /* Icon color */
 }
 
 .options-container {
     background-color: aliceblue;
     width: 100px; /* Fixed width for the sidebar */
-    height: 100%; /* Full viewport height */
+    height: 100%;
     opacity: 85%;
     margin: 0px;
     padding: 10px 0px;
+    padding-bottom: 5000px;
     text-align: center;
     position: absolute;
     display: block;
 }
 
+.options-container article {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.options-container article::-webkit-scrollbar {
+    display: none;
+}
+
 .options-container h2 {
     font-size: 120%;
+}
+
+.hidden-title {
+    display: none;
 }
 
 .sidebar button {
@@ -83,76 +126,374 @@ header {
     background-color: black; /* Darker background on hover */
 }
 
-.main {
-    width: auto;
-    height: auto;
-    opacity: 85%;
-    margin: 0px 100px; /* Adjust margin as needed */
-    padding: 0px 0;
-    flex-grow: 1; /* Keep this to allow it to fill available space */
-    min-height: 100vh; /* Set a minimum height if desired */
-}
-
-.main article {
-    text-align: center;
-    font-size: 90%;
-    padding: 10px;
-    /*background-color: blue;*/
-    margin: 0%;
-    width: 100%;
-}
-
-
-/* from js*/
 
 #menuContainer {
-    /*background-color: yellowgreen;*/
-    display: flex; /* Use flexbox layout for menu items */
-    align-items: flex-start; /* Align items at the start of the container */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    margin: 0%;
-    margin-left: 0%;
-    gap: 20px; /* Space between items */
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0px 120px;
+    margin-right: 20px;
+    padding-bottom: 100px;
+    gap: 20px;
     text-align: center;
     justify-content: left; /* Center items horizontally */
-
 }
 
-.menu-item {
+.menu-Container {
+    overflow-y:visible;
+    height: 90%;
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 50%;
+}
+
+.menu-container {
+    height: 79vh; /* Adjust height based on header height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+.menu-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.menu-item, .all-menu-item{
+    position: relative;        /* Set relative positioning for the container */
     text-align: center;
-    padding: 10px;
-    background-color: white; /* White background for menu items */
+    margin: 15px;
+    padding: 15px 5px;
+    padding-bottom: 0%;
+    font-size: 70%;
+    background-color: white;  /* White background for menu items */
+    border: 1px solid #ccc;   /* Light border */
+    border-radius: 8px;       /* Rounded corners */
+    width: 200px;              /* Fixed width for all items */
+    height: 140px;             /* Fixed height for all items */
+    display: flex;            /* Use flexbox for inner content */
+    flex-direction: column;   /* Stack content vertically */
+    justify-content: space-between; /* Space out content */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.dish-item {
+    background-color: antiquewhite;
+}
+
+.menu-item:hover, .all-menu-item:hover {
+    transform: scale(1.03);
+}
+
+
+.menu-item h3, .all-menu-item h3{
+    margin-top: 6px;
+    text-align: center;
+}
+
+.menu-item div, .all-menu-item div{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.menu-item ul, .all-menu-item ul {
+    text-align: center;
+    padding: 0;
+    margin-top: 5%;
+}
+
+.addpage{
+    margin: 100px 1000px;
+    background-color: aqua;
+}
+
+.add-page-button {
+    width: 210px; /* Match the width of menu items */
+    height: 150px; /* Match the height of menu items */
+    margin: 17px 15px; /* Same margin as menu items */
+    padding: 0; /* Padding for the button */
+    margin-bottom: 0;
+    border: none; /* No border */
+    border-radius: 8px; /* Match rounded corners */
+    background-color: white; /* Green background */
+    color: black; /* Text color */
+    font-size: 150%; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    display: flex; /* Use flex for inner content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.add-page-button:hover {
+    transform: scale(1.03); /* Scale effect on hover */
+}
+
+.dish-button, .cal-dish-button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove border */
+    width: 100%; /* Make the button take full width */
+    height: 100%;
+    text-align: left; /* Align text to the left */
+    cursor: pointer; /* Change the cursor to pointer */
+}
+
+
+
+#allDishesContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0px 120px;
+    margin-right: 20px;
+    padding-bottom: 100px;
+    gap: 20px;
+    text-align: center;
+    overflow-y: visible;
+    justify-content: left; /* Center items horizontally */
+}
+
+
+.edit, .delete, .add-calendar {
+    position: absolute;        /* Position absolute for buttons */
+    top: 10px;                /* Distance from the top */
+    right: 10px;              /* Distance from the right */
+    font-size: 70%;
+    background: transparent;  /* Transparent background */
+    border: none;             /* No border */
+    cursor: pointer;          /* Pointer cursor */
+    justify-content: space-between
+}
+
+
+.add-calendar {
+    margin-right: 33px;
+}
+
+.edit {
+    margin-right: 15px; /* Slight spacing between buttons */
+}
+
+
+
+.showdetail {
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    max-height: 50%;
+    overflow-y:auto;
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+#addfoodForm .modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#addFoodForm {
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #fefefe; /* White background */
+    margin: 15px 25% ; /* Margin around the form */
+    padding: 12px 5%; /* Padding inside the modal */
+    border: 1px solid #888; /* Border */
+    width: 550px; /* Responsive width */
+    height: 500px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    overflow-y: hidden;
+}
+
+/* Additional styles for inputs and buttons */
+#addFoodForm input {
+    width: 80%; /* Full width for inputs */
+    height: 10%;
+    margin-bottom: 10px; /* Space below each input */
+    padding: 10px; /* Padding inside inputs */
+}
+
+#addFoodForm button {
+    cursor: pointer; /* Pointer cursor */
+    width: 20%; /* Adjust width for buttons */
+    height: 40px; /* Height of buttons */
+    font-size: 100%; /* Font size */
+    text-align: center; /* Center text */
+    color: black;
+    background-color: white; /* Button background color */
+    border: none; /* No border */
+    margin: 0 4%; /* Space between buttons */
+}
+
+
+#submitFood {
+    margin-right: 4%; /* Space between buttons */
+}
+
+
+
+#addFoodForm h3 {
+    margin: 0; /* Remove margin */
+    text-align: center; /* Center title */
+}
+
+/* Optional: Style for inputs and buttons */
+#foodName, #fooditem, #foodRecipe, #time, #foodNote {
+    width: 90%; /* Full width for inputs */
+    margin-bottom: 10px; /* Space below each input */
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px; /* Padding inside inputs */
+}
+
+#addFoodForm textarea {
+    height: 100px;
+}
+
+#submitFood, #cancelFood {
+    width: 48%; /* Adjust width for two buttons */
+    margin-right: 4%; /* Space between buttons */
+}
+
+.calendar {
+    height: 75vh;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    text-align: center; /* Center text within the calendar section */
+    padding: 20px; /* Add some padding */
+    /*border: 1px solid #ccc; /* Optional: Add a border for visual clarity */
+    border-radius: 8px; /* Optional: Round the corners */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+
+#calendarList {
+    overflow-y: auto;
+    height: 60vh;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0px 10%;
+    padding-left: 0%;
+    gap: 10px;
+    text-align: center;
+    justify-content: left; /* Center items horizontally */
+}
+
+
+#calendarList::-webkit-scrollbar {
+    display: none;
+}
+
+.calendar-list {
+    position: relative; /* Enable positioning for buttons */
+    text-align: center; /* Center text within the calendar item */
+    margin: 15px; /* Space between items */
+    padding: 15px; /* Padding inside the box */
+    background-color: white; /* White background for calendar items */
     border: 1px solid #ccc; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    width: auto; /* Set a fixed width for all items */
-    height: auto; /* Set a fixed height for all items */
+    border-radius: 15px; /* Rounded corners */
+    width: 100%; /* Fixed width for all items */
+    height: auto; /* Automatic height based on content */
     display: flex; /* Use flexbox for inner content */
     flex-direction: column; /* Stack content vertically */
     justify-content: space-between; /* Space out content */
     transition: transform 0.3s ease; /* Smooth scaling on hover */
 }
 
-.menu-item:hover {
-    transform: scale(1.03); /* Slightly enlarge on hover */
+.calendar-list:hover {
+    transform: scale(1.03); /* Scale effect on hover */
 }
 
-.menu-item h3 {
-    font-size: 90%; /* Font size for dish name */
-    margin: 1%;
+.calendar-list h3 {
+    margin: 10px 0; /* Space above and below the title */
 }
 
-.menu-item p {
-    font-size: 70%; /* Font size for recipe description */
+.calendar-list ul {
+    padding: 0; /* Remove padding */
+    margin: 0px 0; /* Space between lists */
 }
 
-.menu-item button {
-    padding: 8px; /* Padding for button */
-    font-size: 50%; /* Font size for button */
+.calendar-list .calshowdetail, .calendar-list .all-detail-button {
+    background-color: transparent;
+    border: none;
 }
 
-@media (orientation:portrait) {body{
-    margin:0 0;
-    padding: 0 0;
-    background-image: url(vertical.jpg);
-    background-size:120%;
-}}
+.calendar-list .delete, .calendar-list .edit {
+    font-size: 80%;
+    margin-right: 10px;
+}
+
+.calendar-list .edit {
+    margin-right: 35px;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#adminbutton {
+    padding: 5% 20%;
+}
+
+@media (orientation:portrait) {
+
+    .calendar {
+        width: 75vw;
+        margin-left: 20%;
+        padding-left: 0%;
+    }
+
+    .calendar-list {
+        padding: 25px;
+    }
+}
