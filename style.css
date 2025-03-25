@@ -496,4 +496,28 @@ header {
     .calendar-list {
         padding: 25px;
     }
+
+    #addFoodForm {
+        background-color: #fefefe;
+        margin: 40% 5%;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 10px;
+        height: 60%;
+        overflow-y: auto;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 50% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 10px;
+        max-height: 50%;
+        overflow-y: auto;
+    }
 }
