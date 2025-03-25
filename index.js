@@ -30,27 +30,27 @@ function loadDefaultData() {
     }
 
     const backgroundImages = {
-        Chinese: "url('png/cn8.jpg')", // 中餐背景图
-        Japanese: "url('png/jp3.jpg')", // 日本餐背景图
-        HongKong: "url('png/hk5.jpg')", // 香港餐背景图
-        Italy: "url('png/italy5.jpg')", // 意大利餐背景图
-        Dessert: "url('png/d6.jpg')", // 甜点背景图
-        Drink: "url('png/drink3.jpg')", // 饮料背景图
-        Sauce: "url('png/s4.jpg')", // 酱料背景图
-        alldish: "url('png/cal10.png')", // 所有菜品背景图
-        index: "url('png/cal11.png')" // 首页背景图
+        Chinese: "url('cn8.jpg')", // 中餐背景图
+        Japanese: "url('jp3.jpg')", // 日本餐背景图
+        HongKong: "url('hk5.jpg')", // 香港餐背景图
+        Italy: "url('italy5.jpg')", // 意大利餐背景图
+        Dessert: "url('d6.jpg')", // 甜点背景图
+        Drink: "url('drink3.jpg')", // 饮料背景图
+        Sauce: "url('s4.jpg')", // 酱料背景图
+        alldish: "url('cal10.png')", // 所有菜品背景图
+        index: "url('cal11.png')" // 首页背景图
     };
     
     const landscapeBackgroundImages = {
-        Chinese: "url('png/cnv1.jpg')", // 中餐横屏背景图
-        Japanese: "url('png/jpv1.jpg')", // 日本餐横屏背景图
-        HongKong: "url('png/hkv2.jpg')", // 香港餐横屏背景图
-        Italy: "url('png/iv3.jpg')", // 意大利餐横屏背景图
-        Dessert: "url('png/dv5.jpg')", // 甜点横屏背景图
-        Drink: "url('png/drinkv1.jpg')", // 饮料横屏背景图
-        Sauce: "url('png/s4-landscape.jpg')", // 酱料横屏背景图
-        alldish: "url('png/mainv.jpg')", // 所有菜品横屏背景图
-        index: "url('png/calv3.png')" // 首页横屏背景图
+        Chinese: "url('cnv1.jpg')", // 中餐横屏背景图
+        Japanese: "url('jpv1.jpg')", // 日本餐横屏背景图
+        HongKong: "url('hkv2.jpg')", // 香港餐横屏背景图
+        Italy: "url('iv3.jpg')", // 意大利餐横屏背景图
+        Dessert: "url('dv5.jpg')", // 甜点横屏背景图
+        Drink: "url('drinkv1.jpg')", // 饮料横屏背景图
+        Sauce: "url('s4-landscape.jpg')", // 酱料横屏背景图
+        alldish: "url('mainv.jpg')", // 所有菜品横屏背景图
+        index: "url('calv3.png')" // 首页横屏背景图
     };
     
     const urlParams = new URLSearchParams(window.location.search); // 获取 URL 参数
