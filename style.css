@@ -499,7 +499,7 @@ header {
 
     #addFoodForm {
         background-color: #fefefe;
-        margin: 35% 5%;
+        margin: 25% 5%;
         padding: 20px;
         border: 1px solid #888;
         width: 80%;
@@ -511,7 +511,7 @@ header {
 
     .modal-content {
         background-color: #fefefe;
-        margin: 35% auto;
+        margin: 25% auto;
         padding: 20px;
         border: 1px solid #888;
         width: 80%;
