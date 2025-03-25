@@ -3,44 +3,110 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Food Menu</title>
+        <title>Cookbook-menu</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+        <script defer src="index.js"></script>
     </head>
-
 <body>
-    <header class="topbar">
-        <h1 class="right">
-            <li><a class="home" href="index.html">Home</a></li>
-        </h1>
+    <div class="wrapper">
+        <header>
+            <a href="index.html?style=index" class="home">
+                <i class="fa fa-home"></i>
+            </a>
+            <nav class="main-menu">
+                <ul>
+    
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="admin.html">
+                            <i class="material-icons">person</i>
+                    </a>
+                </li>
+    
+                </ul>
+            </nav>
+        </header>    
+        
+        <main>
+            <aside class="options-container">
+                <h2 id="menuHeader"></h2>
+                <article class="sidebar">
+                    <button onclick="location.href='alldish.html?style=alldish'">All Dish</button>
+                    <button onclick="location.href='menu.html?style=Chinese'">Chinese</button>
+                    <button onclick="location.href='menu.html?style=Japanese'">Japanese</button>
+                    <button onclick="location.href='menu.html?style=HongKong'">HK</button>
+                    <button onclick="location.href='menu.html?style=Italy'">Italy</button>
+                    <button onclick="location.href='menu.html?style=Drink'">Drink</button>
+                    <button onclick="location.href='menu.html?style=Dessert'">Dessert</button>
+                    <button onclick="location.href='menu.html?style=Sauce'">Sauce</button>
 
-        <h1 class="left">
-            <li><a href="shoppinglist.html">Shoppinglist</a></li>
-            <li><a href="admin.html">Admin</a></li>
-        </h1>
-    </header>
+                </article>
+        
+            </aside>
+        
+        <article>
 
-    <aside class="options-container">
-        <h2 id="menuHeader"></h2>
-        <article class="sidebar">
-            <button onclick="location.href='menu.html?style=Chinese'">Chinese</button>
-            <button onclick="location.href='menu.html?style=Japanese'">Japanese</button>
-            <button onclick="location.href='menu.html?style=UK'">UK</button>
+            
+            <section class="menu-container" id="menu-container">
+                <p></p>
+                <h2 class="menu-Container" id="menuContainer"></h2>
+                
+            </section>
+    
+            <section id="addFoodForm" class="modal hidden">
+                <h3>Add New Dish</h3>
+            
+                <label for="foodName">Dish Name:</label>
+                <input type="text" id="foodName" required>
+            
+                <label for="fooditem">Ingredients (comma separated):</label>
+                <textarea id="fooditem" rows="4" required></textarea>
+            
+                <label for="foodRecipe">Recipe (comma separated):</label>
+                <textarea id="foodRecipe" rows="4" required></textarea>
+            
+                <label for="diff">Difficulty:</label>
+                <input type="text" id="diff" required>
+            
+                <label for="time">Time:</label>
+                <input type="text" id="time" required>
+            
+                <label for="foodnote">Note:</label>
+                <input type="text" id="foodnote">
+            
+                <label for="tags">Tags (comma separated):</label>
+                <input type="text" id="tags"> <!-- Ensure this ID is used in JavaScript -->
+            
+                <button type="button" id="submitFood" onclick="submitFood()">
+                    <i class="fa fa-save"></i> Submit
+                </button>
+                <button type="button" id="cancelFood" onclick="cancelAdd()">
+                    <i class="fa fa-close"></i> Cancel
+                </button>
+            </section>
+    
+            <section id="detailModal" class="modal hidden" onclick="closeModal(event)">
+                <div class="modal-content" onclick="event.stopPropagation();"> <!-- Prevent click from propagating -->
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalItem"></p>
+                    <p id="modalRecipe"></p>
+                    <p id="modalNote"></p>
+                </div>
+            </section>
         </article>
-
-    </aside>
-
-    <main class="main">
-        <article class="menu-container" id="menu-container">
-            <h2 class="menu-container" id="menuContainer"></h2>
-        </article>
-    </main>
-
-
-
-    <script defer src="index.js"></script>
+        </main>
+    </div>
 </body>
+    
 
-</html>
+
