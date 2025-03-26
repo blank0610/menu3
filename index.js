@@ -607,9 +607,6 @@ function displayCalendarItems() {
             <h3>${dish.name}</h3>
             <ul class="diff">Difficulty: ${dish.difficulty}</ul>
             <ul class="time">Time: ${dish.time}</ul>
-            <button class="edit" onclick="editcal('${dish.name}'); event.stopPropagation();">
-                <i class="fas fa-edit"></i>
-            </button>
             <button class="delete" onclick="deleteItem('${dish.name}'); event.stopPropagation();">
                 <i class="fas fa-trash"></i>
             </button>
