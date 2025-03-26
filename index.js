@@ -241,20 +241,38 @@ function showDetails(name, cuisine) {
 // 关闭模态框
 function closeModal(event) {
     if (event && event.target === document.getElementById('detailModal')) {
-        document.getElementById('detailModal').classList.add('hidden'); // 隐藏模态框
+        document.getElementById('detailModal').classList.add('hidden'); // Hide detail modal
+    } else if (event && event.target === document.getElementById('addFoodForm')) {
+        document.getElementById('addFoodForm').classList.add('hidden'); // Hide add food form
     } else {
-        document.getElementById('detailModal').classList.add('hidden'); // 隐藏模态框
+        document.getElementById('detailModal').classList.add('hidden'); // Hide detail modal
     }
 }
-
 // 添加新菜品的表单处理
-// 添加新菜品的表单处理
-const addFoodForm = document.getElementById('addFoodForm'); // 获取添加食物表单
 
 function addpage() {
+    const addFoodForm = document.getElementById('addFoodForm'); // Get the add food form
     addFoodForm.classList.remove('hidden'); // Show the add food form
-    document.getElementById('tags').value = style; // Auto-fill the tags with the current style
+
+    // Get the current style, defaulting to 'Chinese' if not found
+    const currentStyle = new URLSearchParams(window.location.search).get('style') || 'Chinese'; 
+
+    // Clear previous values
+    document.getElementById('foodName').value = '';
+    document.getElementById('fooditem').value = '';
+    document.getElementById('foodRecipe').value = '';
+    document.getElementById('diff').value = '';
+    document.getElementById('time').value = '';
+    document.getElementById('foodnote').value = '';
+    
+    // Set the tags input to include the current style
+    document.getElementById('tags').value = currentStyle; 
+
+    // Focus on the first input field
+    document.getElementById('foodName').focus();
 }
+
+let editingDishName = ''; // Global variable to track the dish being edited
 
 function submitFood() {
     const foodName = document.getElementById('foodName').value.trim();
@@ -263,7 +281,21 @@ function submitFood() {
     const diff = document.getElementById('diff').value.trim();
     const time = document.getElementById('time').value.trim();
     const note = document.getElementById('foodnote').value.trim();
-    const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim()); // Get tags
+    
+    const currentStyle = new URLSearchParams(window.location.search).get('style') || 'Chinese'; 
+    const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
+
+    // Include the current style in the tags
+    if (!tags.includes(currentStyle)) {
+        tags.push(currentStyle);
+    }
+
+    // Check if the dish name already exists
+    const existingDish = Object.values(menuData).flat().find(dish => dish.name === foodName);
+    if (existingDish && editingDishName !== foodName) {
+        alert("A dish with this name already exists. Please change the name."); // Show warning
+        return; // Exit the function to prevent further processing
+    }
 
     if (foodName && foodRecipe.length > 0) {
         const newDish = {
@@ -276,16 +308,28 @@ function submitFood() {
             tags: tags // Include tags in the new dish
         };
 
-        // Add the dish to the appropriate tags in menuData
-        tags.forEach(tag => {
-            if (!menuData[tag]) {
-                menuData[tag] = []; // Initialize if tag doesn't exist
+        // Check if we're editing an existing dish
+        if (editingDishName) {
+            // Update existing dish
+            let cuisine = Object.keys(menuData).find(c => menuData[c].some(dish => dish.name === editingDishName));
+            if (cuisine) {
+                const index = menuData[cuisine].findIndex(dish => dish.name === editingDishName);
+                menuData[cuisine][index] = newDish; // Update the dish
             }
+            // Clear the editingDishName
+            editingDishName = '';
+        } else {
+            // Add the dish to the appropriate tags in menuData
+            tags.forEach(tag => {
+                if (!menuData[tag]) {
+                    menuData[tag] = []; // Initialize if tag doesn't exist
+                }
 
-            if (!menuData[tag].some(dish => dish.name === newDish.name)) {
-                menuData[tag].push(newDish); // Add the dish to the corresponding tag
-            }
-        });
+                if (!menuData[tag].some(dish => dish.name === newDish.name)) {
+                    menuData[tag].push(newDish); // Add the dish to the corresponding tag
+                }
+            });
+        }
 
         // Save the updated menuData to local storage
         localStorage.setItem('menuData', JSON.stringify(menuData));
@@ -337,64 +381,75 @@ function editItem(name) {
     }
 
     if (item) {
-        const newName = prompt("Edit dish name:", item.name); // 提示用户编辑菜品名称
-        const newItem = prompt("Edit ingredients (comma separated):", item.item.join(', ')); // 提示编辑成分
-        const newRecipe = prompt("Edit recipe (comma separated):", item.recipe.join(',')); // 提示编辑食谱
-        const newDiff = prompt("Edit difficulty:", item.difficulty); // 提示编辑难度
-        const newTime = prompt("Edit time:", item.time); // 提示编辑时间
-        const newNote = prompt("Edit note:", item.note); // 提示编辑备注
+        // Populate the form with the existing dish details
+        document.getElementById('foodName').value = item.name;
+        document.getElementById('fooditem').value = item.item.join(', ');
+        document.getElementById('foodRecipe').value = item.recipe.join(', ');
+        document.getElementById('diff').value = item.difficulty;
+        document.getElementById('time').value = item.time;
+        document.getElementById('foodnote').value = item.note;
 
-        if (newName && newItem && newRecipe) { // 检查输入是否有效
-            // Update the item
-            item.name = newName;
-            item.item = newItem.split(',').map(i => i.trim());
-            item.recipe = newRecipe.split(',').map(r => r.trim());
-            item.difficulty = newDiff;
-            item.time = newTime;
-            item.note = newNote;
-
-            // Save changes to local storage
-            if (cuisine === 'Calendar') {
-                localStorage.setItem('calendarData', JSON.stringify(calendarData)); // Update calendar data
-            } else {
-                localStorage.setItem('menuData', JSON.stringify(menuData)); // Update menu data
-            }
-
-            displayMenuItems(); // Update menu display
-            displayAllDishes(); // Update all dishes display
-            displayCalendarItems(); // Update calendar display if needed
+        // Set tags, including the current style
+        const currentStyle = new URLSearchParams(window.location.search).get('style') || 'Chinese';
+        const tags = item.tags || [];
+        if (!tags.includes(currentStyle)) {
+            tags.push(currentStyle);
         }
+        document.getElementById('tags').value = tags.join(', ');
+
+        // Show the add food form as a modal
+        const addFoodForm = document.getElementById('addFoodForm');
+        addFoodForm.classList.remove('hidden'); // Show the add food form
+
+        // Set the editing state for submitFood function
+        editingDishName = item.name; // Save the name of the dish being edited
+
+        // Focus on the first input field
+        document.getElementById('foodName').focus(); // Focus on the first input field
     } else {
-        alert("Dish not found."); // 如果未找到菜品，显示警告
+        alert("Dish not found."); // If the dish is not found, show an alert
     }
 }
 
-function editcal(name) {
-    // Find the item in calendarData
-    const item = calendarData.find(dish => dish.name === name);
+function editItem(name) {
+    // Find the cuisine that contains the dish in menuData
+    let cuisine = Object.keys(menuData).find(c => menuData[c].some(dish => dish.name === name));
+    let item;
+
+    if (cuisine) {
+        item = menuData[cuisine].find(dish => dish.name === name); // 查找指定菜品
+    } else {
+        // Otherwise, check in calendarData
+        item = calendarData.find(dish => dish.name === name);
+        cuisine = 'Calendar'; // Set cuisine as Calendar for the modal title
+    }
 
     if (item) {
-        const newName = prompt("Edit dish name:", item.name);
-        const newItem = prompt("Edit ingredients (comma separated):", item.item.join(', '));
-        const newRecipe = prompt("Edit recipe (comma separated):", item.recipe.join(', '));
-        const newDiff = prompt("Edit difficulty:", item.difficulty);
-        const newTime = prompt("Edit time:", item.time);
-        const newNote = prompt("Edit note:", item.note);
+        // Populate the form with the existing dish details
+        document.getElementById('foodName').value = item.name;
+        document.getElementById('fooditem').value = item.item.join('\n'); // Use newline for ingredients
+        document.getElementById('foodRecipe').value = item.recipe.join('\n'); // Use newline for recipes
+        document.getElementById('diff').value = item.difficulty;
+        document.getElementById('time').value = item.time;
+        document.getElementById('foodnote').value = item.note;
 
-        if (newName && newItem && newRecipe) {
-            // Update the item
-            item.name = newName;
-            item.item = newItem.split(',').map(i => i.trim());
-            item.recipe = newRecipe.split(',').map(r => r.trim());
-            item.difficulty = newDiff;
-            item.time = newTime;
-            item.note = newNote;
-
-            // Save changes to local storage
-            localStorage.setItem('calendarData', JSON.stringify(calendarData)); // Update calendar data
-            
-            displayCalendarItems(); // Refresh the display
+        // Set tags, including the current style
+        const currentStyle = new URLSearchParams(window.location.search).get('style') || 'Chinese';
+        const tags = item.tags || [];
+        if (!tags.includes(currentStyle)) {
+            tags.push(currentStyle);
         }
+        document.getElementById('tags').value = tags.join(', ');
+
+        // Show the add food form as a modal
+        const addFoodForm = document.getElementById('addFoodForm');
+        addFoodForm.classList.remove('hidden'); // Show the add food form
+
+        // Set the editing state for submitFood function
+        editingDishName = item.name; // Save the name of the dish being edited
+
+        // Focus on the first input field
+        document.getElementById('foodName').focus(); // Focus on the first input field
     } else {
         alert("Dish not found."); // If the dish is not found, show an alert
     }
@@ -482,17 +537,26 @@ function calculateShoppingList() {
     // Iterate over calendarData to aggregate ingredients
     calendarData.forEach(dish => {
         dish.item.forEach(ingredient => {
+            // Check if the ingredient contains the word "serve" or "water"
+            if (ingredient.toLowerCase().includes("serve") || ingredient.toLowerCase().includes("water")) {
+                return; // Skip this ingredient if it contains "serve" or "water"
+            }
+
             const parts = ingredient.split(' '); // Assuming ingredients are separated by spaces
             const base = parts[0]; // Use the first part as the base
 
+            // Initialize the base in ingredientCount if it doesn't exist
             if (!ingredientCount[base]) {
-                ingredientCount[base] = { ingredients: [], dishes: [] };
+                ingredientCount[base] = { ingredients: {}, dishes: [] };
             }
 
-            // Add the ingredient and the dish to the respective arrays
-            if (!ingredientCount[base].ingredients.includes(ingredient)) {
-                ingredientCount[base].ingredients.push(ingredient); // Store unique ingredients
+            // Count occurrences of each ingredient
+            if (!ingredientCount[base].ingredients[ingredient]) {
+                ingredientCount[base].ingredients[ingredient] = 0; // Initialize count
             }
+            ingredientCount[base].ingredients[ingredient]++; // Increment count
+
+            // Add the dish to the respective array if not already present
             if (!ingredientCount[base].dishes.includes(dish.name)) { // Assuming dish has a 'name' property
                 ingredientCount[base].dishes.push(dish.name); // Store the name of the dish
             }
@@ -510,8 +574,10 @@ function calculateShoppingList() {
         const div = document.createElement('div');
         div.className = 'ingredient-item';
 
-        // Create a string with each ingredient on a new line and related dishes below
-        div.innerHTML = `<strong>${base}:</strong><br>${ingredients.join('<br>')}<br><br><em><strong>Related dishes:</strong> <br> ${dishes.join(', ')}</em>`;
+        // Create a string with each ingredient and its count on a new line and related dishes below
+        const ingredientLines = Object.entries(ingredients).map(([ingredient, count]) => `${ingredient} (x${count})`).join('<br>');
+
+        div.innerHTML = `<strong>${base}:</strong><br>${ingredientLines}<br><br><em><strong>Related dishes:</strong> <br> ${dishes.join(', ')}</em>`;
         ingredientList.appendChild(div); // Append the new ingredient item div to the ingredient list
     }
 }
