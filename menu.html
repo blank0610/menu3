@@ -62,36 +62,38 @@
                 
             </section>
     
-            <section id="addFoodForm" class="modal hidden">
-                <h3>Add New Dish</h3>
+            <section id="addFoodForm" class="modal hidden" onclick="closeModal(event)">
+                <div class="food-content" onclick="event.stopPropagation();">
+                    <h3>Add New Dish</h3>
+                    
+                    <label for="foodName">Dish Name:</label>
+                    <input type="text" id="foodName" required>
+                    
+                    <label for="fooditem">Ingredients (comma separated):</label>
+                    <textarea id="fooditem" rows="100" required></textarea>
+                    
+                    <label for="foodRecipe">Recipe (comma separated):</label>
+                    <textarea id="foodRecipe" rows="100" required></textarea>
+                    
+                    <label for="diff">Difficulty:</label>
+                    <input type="text" id="diff" required>
+                    
+                    <label for="time">Time:</label>
+                    <input type="text" id="time" required>
+                    
+                    <label for="foodnote">Note:</label>
+                    <input type="text" id="foodnote">
+                    
+                    <label for="tags">Tags (comma separated):</label>
+                    <input type="text" id="tags">
             
-                <label for="foodName">Dish Name:</label>
-                <input type="text" id="foodName" required>
-            
-                <label for="fooditem">Ingredients (comma separated):</label>
-                <textarea id="fooditem" rows="4" required></textarea>
-            
-                <label for="foodRecipe">Recipe (comma separated):</label>
-                <textarea id="foodRecipe" rows="4" required></textarea>
-            
-                <label for="diff">Difficulty:</label>
-                <input type="text" id="diff" required>
-            
-                <label for="time">Time:</label>
-                <input type="text" id="time" required>
-            
-                <label for="foodnote">Note:</label>
-                <input type="text" id="foodnote">
-            
-                <label for="tags">Tags (comma separated):</label>
-                <input type="text" id="tags"> <!-- Ensure this ID is used in JavaScript -->
-            
-                <button type="button" id="submitFood" onclick="submitFood()">
-                    <i class="fa fa-save"></i>
-                </button>
-                <button type="button" id="cancelFood" onclick="cancelAdd()">
-                    <i class="fa fa-close"></i>
-                </button>
+                    <button type="button" id="submitFood" onclick="submitFood()">
+                        <i class="fa fa-save"></i> Submit
+                    </button>
+                    <button type="button" id="cancelFood" onclick="cancelAdd()">
+                        <i class="fa fa-close"></i> Cancel
+                    </button>
+                </div>
             </section>
     
             <section id="detailModal" class="modal hidden" onclick="closeModal(event)">
