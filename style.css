@@ -389,7 +389,7 @@ header {
     margin-right: 4%; /* Space between buttons */
 }
 
-.calendar {
+.calendar, #shoplist {
     height: 75vh;
     width: 50vw;
     margin-left: 25vw;
@@ -463,6 +463,61 @@ header {
     margin-right: 35px;
 }
 
+#shoplist {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 25vw;
+    flex-direction: column; /* Stack the shopping list vertically */
+    align-items: flex-start;
+    padding: 20px; /* Add some padding around the list */
+    width: 90vw;
+}
+
+#ingredientList {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    height: 79vh; /* Adjust height according to your layout */
+    margin: 0;
+    box-sizing: border-box;
+    gap: 20px; /* Space between items */
+}
+
+#ingredientList::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+.ingredient-item {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+    padding: 15px 5px;
+    font-size: 80%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.ingredient-item:hover {
+    transform: scale(1.03); /* Scale effect on hover */
+}
+
+.ingredient-item strong {
+    margin-top: 6px; /* Space above the title */
+    text-align: center; /* Center text */
+}
+
+.ingredient-item p {
+    text-align: center; /* Center text in paragraphs */
+    margin-top: 5%; /* Space above paragraphs */
+    padding: 0; /* Remove padding */
+}
+
 
 .close {
     color: #aaa;
@@ -491,6 +546,7 @@ header {
         width: 75vw;
         margin-left: 20%;
         padding-left: 0%;
+        align-items: center;
     }
 
     .calendar-list {
@@ -520,4 +576,19 @@ header {
         max-height: 50%;
         overflow-y: auto;
     }
+
+    #shoplist {
+        display: flex;
+        margin-left: 100px;
+        margin-right: 25vw;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 45px;
+        width: 50vw;
+    }
+
+    #shoplist h1{
+        text-align: center;
+    }
+
 }
