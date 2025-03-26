@@ -12,6 +12,8 @@ loadCalendarFromLocalStorage(); // Load calendar data from local storage
 displayMenuItems(); // Display specific cuisine menu items
 displayAllDishes(); // Display all dishes
 displayCalendarItems();
+setBackground();
+calculateShoppingList();
 }
 
 function loadDefaultData() {
@@ -82,6 +84,12 @@ function loadFromLocalStorage() {
 }
 
 // 从本地存储加载日历数据
+document.addEventListener('DOMContentLoaded', () => {
+    loadCalendarFromLocalStorage(); // Load calendar data from local storage
+    calculateShoppingList(); // Automatically calculate and display the shopping list
+});
+
+// Function to load calendar data from local storage
 function loadCalendarFromLocalStorage() {
     const storedCalendarData = localStorage.getItem('calendarData'); // 获取本地存储中的日历数据
     if (storedCalendarData) {
@@ -458,13 +466,53 @@ function addToCalendar(dishName) {
                 calendarData.push(calendarItem);
                 localStorage.setItem('calendarData', JSON.stringify(calendarData));
                 alert(`${dishName} has been added to your calendar.`);
-                displayCalendarItems(); // 更新显示
+                displayCalendarItems(); // Update calendar display
             } else {
                 alert(`${dishName} is already in your calendar.`);
             }
         }
     } else {
-        alert("Dish not found."); // 如果未找到菜品，显示警告
+        alert("Dish not found."); // If the dish is not found, show an alert
+    }
+}
+
+function calculateShoppingList() {
+    const ingredientCount = {};
+
+    // Iterate over calendarData to aggregate ingredients
+    calendarData.forEach(dish => {
+        dish.item.forEach(ingredient => {
+            const parts = ingredient.split(' '); // Assuming ingredients are separated by spaces
+            const base = parts[0]; // Use the first part as the base
+
+            if (!ingredientCount[base]) {
+                ingredientCount[base] = { ingredients: [], dishes: [] };
+            }
+
+            // Add the ingredient and the dish to the respective arrays
+            if (!ingredientCount[base].ingredients.includes(ingredient)) {
+                ingredientCount[base].ingredients.push(ingredient); // Store unique ingredients
+            }
+            if (!ingredientCount[base].dishes.includes(dish.name)) { // Assuming dish has a 'name' property
+                ingredientCount[base].dishes.push(dish.name); // Store the name of the dish
+            }
+        });
+    });
+
+    // Display the total ingredients needed
+    const ingredientList = document.getElementById('ingredientList');
+    ingredientList.innerHTML = ''; // Clear previous results
+
+    for (const base in ingredientCount) {
+        const { ingredients, dishes } = ingredientCount[base]; // Destructure the object
+
+        // Create a new div for each unique ingredient grouping
+        const div = document.createElement('div');
+        div.className = 'ingredient-item';
+
+        // Create a string with each ingredient on a new line and related dishes below
+        div.innerHTML = `<strong>${base}:</strong><br>${ingredients.join('<br>')}<br><br><em><strong>Related dishes:</strong> <br> ${dishes.join(', ')}</em>`;
+        ingredientList.appendChild(div); // Append the new ingredient item div to the ingredient list
     }
 }
 
