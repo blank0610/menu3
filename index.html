@@ -60,6 +60,16 @@
                     
                     <button id="clear-Calendar" class="" onclick="clearCalendar()">Clear All Calendar</button> <!-- Clear All Calendar Button -->
                 </section>
+
+                <section id="detailModal" class="modal hidden" onclick="closeModal(event)">
+                    <div class="modal-content" onclick="event.stopPropagation();"> <!-- Prevent click from propagating -->
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2 id="modalTitle"></h2>
+                        <p id="modalItem"></p>
+                        <p id="modalRecipe"></p>
+                        <p id="modalNote"></p>
+                    </div>
+                </section>
             </main>
         </div>
     </body>
