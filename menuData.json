@@ -1,5 +1,6 @@
 
 [
+
   {
     "name": "上海粗炒",
     "item": [
@@ -824,6 +825,31 @@
       "note": "",
       "tags":["Dessert", "Chinese"]
     },
+
+    {
+      "name": "鬆餅 (Pancakes)",
+      "item": [
+        "Serve 3 pcs",
+        "低筋麵粉 (Cake Flour) 100克",
+        "泡打粉 (Baking Powder) 5克",
+        "砂糖 (Sugar) 30克",
+        "雞蛋 (Egg) 1個",
+        "牛奶 (Milk) 100毫升",
+        "融化奶油 (Melted Butter) 15克"
+      ],
+      "recipe": [
+        "打散雞蛋，加入牛奶和融化奶油。 (Beat the egg with milk and melted butter.)",
+        "然後將低筋麵粉、泡打粉和砂糖混合，攪拌至無顆粒。 (Then combine the cake flour, baking powder, and sugar until smooth.)",
+        "將液體混合物倒入粉類中，攪拌至無顆粒。 (Pour the liquid mixture into the dry ingredients and stir until smooth.)",
+        "加熱平底鍋，輕輕倒入麵糊，煎至表面出現氣泡後翻面。 (Heat a non-stick pan and gently pour in the batter; cook until bubbles form on the surface, then flip.)",
+        "兩面煎至金黃色，即可盛起享用。 (Cook both sides until golden brown, then serve.)"
+      ],
+      "difficulty": "簡單 (Easy)",
+      "time": "20min",
+      "note": "",
+      "tags": ["Dessert"]
+    },
+
     {
       "name": "岩燒芝士蛋糕",
       "item": [
