@@ -1,0 +1,948 @@
+[
+  {
+    "name": "Shanghai Stir-fried Noodles",
+    "item": [
+      "Serve 2",
+      "Cabbage",
+      "Carrot",
+      "Garlic",
+      "Dried Mushroom",
+      "Pork",
+      "Soy Sauce",
+      "Sugar",
+      "Pepper Powder",
+      "Sesame Oil",
+      "Cooking Oil",
+      "Corn Starch",
+      "Soy Sauce",
+      "Dark Soy Sauce",
+      "Oyster Sauce",
+      "Sugar",
+      "Chicken Broth",
+      "Sesame Oil"
+    ],
+    "recipe": [
+      "Wash and finely chop the cabbage.",
+      "Peel and shred the carrot.",
+      "Peel and mince the garlic.",
+      "Slice the pork, add 1 tsp of soy sauce, sugar, pepper powder, sesame oil, and oil, and mix well.",
+      "Add corn starch, mix well, and marinate for about half an hour.",
+      "Soak the dried mushroom until soft and slice.",
+      "Bring water to a boil and cook the thick noodles until fully cooked.",
+      "Heat oil and stir-fry the pork, minced garlic, and mushrooms until fragrant.",
+      "Add the cooked noodles and stir well.",
+      "Add the cabbage and carrot and stir well.",
+      "Add chicken broth, 2 tsp of soy sauce, dark soy sauce, oyster sauce, and sugar, and mix well.",
+      "Finally, add 1/2 tsp of sesame oil and stir well."
+    ],
+    "difficulty": "Medium",
+    "time": "1Hr",
+    "note": "",
+    "tags": [
+      "Chinese"
+    ]
+  },
+  {
+    "name": "Steamed Chicken with Fish Maw",
+    "item": [
+      "Serve 2",
+      "Fish Maw",
+      "Ginger",
+      "Dried Shiitake Mushroom",
+      "Chicken Thigh",
+      "Salt",
+      "Sugar",
+      "Oyster Sauce",
+      "Ground White Pepper",
+      "Cooking Oil",
+      "Corn Starch",
+      "Ginger Juice",
+      "Ginger Juice",
+      "Salt",
+      "Sugar",
+      "Corn Starch",
+      "Cooking Oil"
+    ],
+    "recipe": [
+      "Soak the dried shiitake mushrooms and fish maw.",
+      "Bring water with ginger slices to a boil, cook the fish maw for about 5 minutes, then turn off the heat and soak for about 2 hours.",
+      "Grate the ginger and extract the ginger juice.",
+      "Thaw and cut the chicken thigh into four pieces.",
+      "Add 4g of salt, 8g of sugar, oyster sauce, ground white pepper, and 1/4 tsp of ginger juice to the chicken and mix well.",
+      "Then add 10g of oil and 5g of corn starch, mix well, and marinate for about 1-2 hours.",
+      "Gently squeeze out the moisture from the fish maw and cut into four pieces.",
+      "Squeeze out the moisture from the dried shiitake mushrooms and slice.",
+      "Mix the fish maw and mushrooms with 1/4 tsp of ginger juice, 2g of salt, and 4g of sugar.",
+      "Then add 5g of oil and 5g of corn starch, and mix well.",
+      "Combine all ingredients and steam over medium heat for about 15 minutes."
+    ],
+    "difficulty": "Medium",
+    "time": "3Hr",
+    "note": "",
+    "tags": [
+      "Chinese"
+    ]
+  },
+  {
+    "name": "Pork Siu Mai",
+    "item": [
+      "Serve 12-14 pcs",
+      "Egg Yolk",
+      "Plain Flour",
+      "Salt",
+      "Water",
+      "Turmeric Powder",
+      "Pork Butt/Pork Chop",
+      "Raw Pork Lard",
+      "Shrimp",
+      "Dried Shiitake Mushroom",
+      "Carrot",
+      "Salt",
+      "Sugar",
+      "Soy Sauce",
+      "Ground White Pepper",
+      "Pork Lard",
+      "Corn Starch"
+    ],
+    "recipe": [
+      "Soak the dried shiitake mushrooms until soft and set aside.",
+      "Separate the egg yolk from the egg white.",
+      "Mix the flour, egg yolk, ⅛ tsp of salt, water, and turmeric powder until a dough forms.",
+      "Flatten the dough, wrap in plastic wrap, and refrigerate for about half an hour.",
+      "Chop the pork and pork lard into smaller pieces.",
+      "Chop half the shrimp and flatten the other half for later use.",
+      "Chop the soaked shiitake mushrooms into small pieces and set aside.",
+      "Mix the pork and flattened shrimp until they become sticky.",
+      "Add the chopped mushrooms, pork lard, and shrimp to the mixture.",
+      "Add 4 g of salt, sugar, soy sauce, and ground white pepper, and mix well.",
+      "Add the pork lard and mix thoroughly.",
+      "Add corn starch and mix well, then wrap in plastic wrap and refrigerate for about half an hour.",
+      "Peel the carrot, slice it thinly, and then chop into small pieces.",
+      "Dust the countertop with flour and roll out the dough into thin circles.",
+      "Cut out circles with a diameter of about 7-8 cm.",
+      "Place the pork filling in the center of the dough skin, then top with carrot pieces.",
+      "Steam over medium-high heat for 10-15 minutes to finish."
+    ],
+    "difficulty": "Medium",
+    "time": "1Hr",
+    "note": "",
+    "tags": [
+      "Chinese"
+    ]
+  },
+  {
+    "name": "Dry-fried Green Beans",
+    "item": [
+      "Serve 2",
+      "Green Beans",
+      "Minced Pork",
+      "Garlic",
+      "Ginger",
+      "Chili Bean Sauce",
+      "Soy Sauce",
+      "Black Vinegar",
+      "Sugar",
+      "Shaoxing Wine",
+      "Cooking Oil"
+    ],
+    "recipe": [
+      "Wash the green beans and set aside.",
+      "Peel and mince the garlic and ginger.",
+      "Mix soy sauce, vinegar, and sugar together and set aside.",
+      "Trim the ends of the green beans, remove the tough fibers from the sides, cut in half, and drain.",
+      "Heat oil in a pan, add the green beans and stir-fry until fragrant, then separate and set aside the beans and oil.",
+      "Add a little oil and cook the minced pork until done, then set aside.",
+      "Add a little more oil and sauté the ginger, garlic, and chili bean sauce over low heat until fragrant.",
+      "Add the green beans and minced pork, and stir well.",
+      "Add Shaoxing wine and the seasoning mixture, stir well, and it's done."
+    ],
+    "difficulty": "Easy",
+    "time": "45min",
+    "note": "",
+    "tags": [
+      "Chinese"
+    ]
+  },
+  {
+    "name": "Mixed Cut Steak",
+    "item": [
+      "Serve 1-2",
+      "Steak",
+      "Garlic",
+      "Onion",
+      "Black Pepper",
+      "Salt",
+      "Onion",
+      "Garlic",
+      "Japanese Soy Sauce",
+      "Mirin",
+      "Brown Sugar",
+      "Worcestershire Sauce",
+      "Water",
+      "Black Pepper"
+    ],
+    "recipe": [
+      "Slice 3 cloves of garlic and rinse to drain.",
+      "Fry on low heat until golden brown, then drain and set aside.",
+      "Slice ½ onion and set aside.",
+      "Cut ¼ onion into pieces and crush with 1 clove of garlic.",
+      "Add Japanese soy sauce, mirin, brown sugar, Worcestershire sauce, and water, and blend into a puree.",
+      "Bring the onion juice to a slight boil and set aside.",
+      "Cut the steak into pieces and season with an appropriate amount of black pepper and salt.",
+      "Heat the pan and sear the steak.",
+      "Add the sliced onion and cook the steak to your liking, and it’s done."
+    ],
+    "difficulty": "Easy",
+    "time": "30min",
+    "note": "",
+    "tags": [
+      "Japanese"
+    ]
+  },
+  {
+    "name": "Japanese Navy Curry",
+    "item": [
+      "Serve 3-4",
+      "Japanese Curry Powder",
+      "Chili Powder",
+      "Plain Flour",
+      "Unsalted Butter",
+      "Onion",
+      "Carrot",
+      "Potato",
+      "Chicken Thigh",
+      "Chicken Broth",
+      "Water",
+      "Brown Sugar",
+      "Salt",
+      "Chutney",
+      "Chocolate",
+      "Instant Coffee"
+    ],
+    "recipe": [
+      "Peel and chop the potato, onion, and carrot, and set aside.",
+      "Cut the chicken thigh into pieces and set aside.",
+      "Mix the curry powder and chili powder, toast them over low heat, then set aside.",
+      "Melt the butter, add the flour, and cook until slightly brown, then mix in the toasted curry powder and set aside off the heat.",
+      "Heat oil in a pan and sear the chicken pieces over high heat.",
+      "Add the potato, onion, and carrot, and stir-fry briefly.",
+      "Add the curry sauce, chicken broth, and water, and stir well.",
+      "Add brown sugar and salt, cover, and simmer on low heat for about half an hour.",
+      "Turn off the heat and add chutney, chocolate, and instant coffee, mixing well."
+    ],
+    "difficulty": "Medium",
+    "time": "1Hr",
+    "note": "",
+    "tags": [
+      "Japanese"
+    ]
+  },
+  {
+    "name": "Bandit-style Chicken Wings",
+    "item": [
+      "Chicken Wing",
+      "Rice Wine",
+      "Garlic Salt",
+      "Sugar",
+      "Corn Starch",
+      "Light Soy Sauce",
+      "Oyster Sauce",
+      "Cumin Powder",
+      "Chinese Five Spice",
+      "Spicy Powder or Seven Flavour Powder"
+    ],
+    "recipe": [
+      "Rinse the chicken wings and dry them thoroughly.",
+      "Add garlic salt and rice wine to the chicken wings.",
+      "Mix them well.",
+      "Add sugar, corn starch, light soy sauce, oyster sauce, cumin powder, Chinese five spice, and spicy powder or seven flavour powder to the chicken wings.",
+      "Mix well again.",
+      "Cover with plastic wrap.",
+      "Take out and preheat the oven to 200 degrees Celsius.",
+      "Dip the marinated sauce and place on the baking tray.",
+      "Sprinkle more cumin powder on each chicken wing.",
+      "Bake at 200 degrees Celsius for 12 minutes or more."
+    ],
+    "difficulty": "Easy",
+    "time": "30 min",
+    "note": "This dish is spicy and delicious, perfect for pairing with drinks.",
+    "tags": [
+      "HongKong"
+    ]
+  },
+  {
+    "name": "Pickled Pepper Chicken Wings",
+    "item": [
+      "Serve 2",
+      "Chicken Wings",
+      "Ginger",
+      "Water",
+      "Salt",
+      "Shaoxing Wine",
+      "Sichuan Peppercorn",
+      "Hot Pepper",
+      "Ginger",
+      "Pickled Peppers",
+      "White Vinegar",
+      "Chicken Broth",
+      "Water",
+      "Salt",
+      "Sugar"
+    ],
+    "recipe": [
+      "Thaw the chicken wings and set aside.",
+      "Mix 500g of water, salt, Shaoxing wine, and 2 slices of ginger and bring to a boil.",
+      "Add the chicken wings, bring to a boil, then reduce to low heat and cook for about 10 minutes.",
+      "Cut the pickled peppers in half and chop the hot pepper.",
+      "Mix Sichuan peppercorn, hot pepper, pickled peppers, 2 slices of ginger, white vinegar, chicken broth, 100g water, salt, and sugar, bring to a boil, and let cool.",
+      "Soak the chicken wings in ice water to cool.",
+      "Drizzle the chicken wings with the pickled pepper sauce, place in a container, and refrigerate for about 1 to 2 days."
+    ],
+    "difficulty": "Medium",
+    "time": "1 Day",
+    "note": "",
+    "tags": [
+      "HongKong"
+    ]
+  },
+  {
+    "name": "Korean Braised Short Ribs",
+    "item": [
+      "Serve 2",
+      "Short Ribs",
+      "Carrot",
+      "White Radish",
+      "Shiitake Mushroom",
+      "King Oyster Mushroom",
+      "Onion",
+      "Asian Pear",
+      "Garlic",
+      "Ginger",
+      "Spicy Chili",
+      "Soy Sauce",
+      "Brown Sugar",
+      "Sesame Oil",
+      "Water"
+    ],
+    "recipe": [
+      "Introduction to Korean Braised Short Ribs.",
+      "Peel and chop the carrots and radish.",
+      "Cut the king oyster mushrooms and shiitake mushrooms into pieces.",
+      "Peel and core the Asian pear, then chop.",
+      "Slice the ginger and peel the garlic, remove the stem from the chili, and chop the onion.",
+      "Cut the short ribs into pieces.",
+      "Blend the chili, garlic, and ginger first, then add the Asian pear and soy sauce to make the sauce.",
+      "Sear the short ribs briefly.",
+      "Add the carrots and radish, sauce, brown sugar, and sesame oil, stir well, add water, cover, and simmer on low heat for about 15 minutes.",
+      "Add the onion, shiitake mushrooms, and king oyster mushrooms, stir well, and cover to cook for about 10 minutes.",
+      "Stir gently, then uncover and cook for another 5-10 minutes to reduce the sauce."
+    ],
+    "difficulty": "Hard",
+    "time": "45min",
+    "note": "",
+    "tags": [
+      "HongKong"
+    ]
+  },
+  {
+    "name": "Oyster Congee",
+    "item": [
+      "Serve 4",
+      "Oysters",
+      "Dried Flounder Fish",
+      "Coriander",
+      "Minced Pork",
+      "Soy Sauce",
+      "Sugar",
+      "Sesame Oil",
+      "Pepper Powder",
+      "Shaoxing Wine",
+      "Chicken Broth",
+      "Water",
+      "Rice",
+      "Preserved Cabbage"
+    ],
+    "recipe": [
+      "Wash the oysters and drain.",
+      "Wash the dried flounder fish, remove excess parts, and cut into small pieces.",
+      "Wash and chop the coriander.",
+      "Marinate the minced pork with soy sauce, sugar, sesame oil, pepper powder, and Shaoxing wine for half an hour.",
+      "Dry-fry the dried flounder fish in a pan until fragrant.",
+      "Soak the rice in water and use your hands to break up the grains.",
+      "Heat oil and sauté the minced pork until fragrant.",
+      "Add chicken broth, dried flounder, water, rice, and preserved cabbage; bring to a boil, then cover and simmer on low heat for 10 minutes.",
+      "Add the seasonings, mix well, cover, and cook for another 5 minutes.",
+      "Add the oysters and coriander, stir well, and cook over low heat until done."
+    ],
+    "difficulty": "Easy",
+    "time": "40min",
+    "note": "",
+    "tags": [
+      "HongKong"
+    ]
+  },
+  {
+    "name": "Black Pepper Short Ribs",
+    "item": [
+      "Serve 1-2",
+      "Beef Short Ribs",
+      "Soy Sauce",
+      "Shaoxing Wine",
+      "Black Pepper",
+      "Sugar",
+      "Water",
+      "Corn Starch",
+      "Cooking Oil",
+      "Onion",
+      "Garlic",
+      "Black Pepper",
+      "Soy Sauce",
+      "Sugar",
+      "Oyster Sauce",
+      "Worcestershire Sauce",
+      "Maggi Seasoning",
+      "Water",
+      "Corn Starch",
+      "Water",
+      "Sesame Oil"
+    ],
+    "recipe": [
+      "Peel and slice the onion into strips, and mince the garlic.",
+      "Wash the beef short ribs and cut into pieces.",
+      "Add 1 tsp of soy sauce, Shaoxing wine, black pepper, and 1/4 tsp of sugar, and mix well.",
+      "Gradually add enough water, corn starch, and oil, mix well, and marinate for about half an hour.",
+      "Mix 2 tsp of soy sauce, 1 tsp of sugar, and oyster sauce together.",
+      "Add Worcestershire sauce, Maggi seasoning, and 100 ml of water, and mix well.",
+      "Heat oil and sear the beef short ribs over high heat until 70-80% cooked, then set aside.",
+      "Sauté the minced garlic and 1 tsp of black pepper until fragrant.",
+      "Add the sliced onion and sauté until fragrant.",
+      "Add the sauce and cook until the onion is soft, adding water as needed.",
+      "Add the beef short ribs and cook on medium-low heat until fully cooked.",
+      "Mix the corn starch with water, then add and stir well.",
+      "Add sesame oil and mix well to finish."
+    ],
+    "difficulty": "Medium",
+    "time": "1Hr",
+    "note": "",
+    "tags": [
+      "HongKong"
+    ]
+  },
+  {
+    "name": "Salt and Pepper Pork Chop",
+    "item": [
+      "Serve 1",
+      "Pork Chops",
+      "Soy Sauce",
+      "Shaoxing Wine",
+      "Sugar",
+      "Ground White Pepper",
+      "Water",
+      "Corn Starch",
+      "Cooking Oil",
+      "Green Onion",
+      "Red Chili Pepper",
+      "Garlic",
+      "Chili Bean Sauce",
+      "Five Spice Powder",
+      "Ground White Pepper",
+      "Salt",
+      "Sugar",
+      "Shaoxing Wine"
+    ],
+    "recipe": [
+      "Pound the pork chops to tenderize and cut them into wide strips.",
+      "Add soy sauce, 3 tsp of Shaoxing wine, 1/2 tsp of sugar, and ground white pepper, and mix well.",
+      "Add water as needed and mix well.",
+      "Add corn starch and cooking oil, and mix well.",
+      "Separate the green onion into white parts and chopped green parts.",
+      "Chop the red chili pepper and set aside.",
+      "Peel and mince the garlic, dividing it into two portions; rinse one half and drain.",
+      "Heat oil and fry the minced garlic over medium-low heat until golden brown.",
+      "Add the pork chops and fry over low heat until golden brown and cooked through, then remove.",
+      "Sauté the white parts of the green onion and the fried garlic until fragrant.",
+      "Add chili bean sauce, five spice powder, and ground white pepper, and stir well.",
+      "Add salt and 1/8 tsp of sugar, and mix well.",
+      "Add 2 tsp of Shaoxing wine and mix well.",
+      "Add the pork chops, red chili pepper, and chopped green onion; stir until well combined and dry.",
+      "Add the fried garlic to the salt and pepper pork chops to finish."
+    ],
+    "difficulty": "Medium",
+    "time": "40min",
+    "note": "",
+    "tags": [
+      "HongKong"
+    ]
+  },
+  {
+    "name": "Soy Sauce Lo Mein",
+    "item": [
+      "Serve 2",
+      "Garlic",
+      "Shallot",
+      "Cooking Oil",
+      "Dark Soy Sauce",
+      "Soy Sauce",
+      "Oyster Sauce",
+      "Sugar",
+      "Chicken Powder",
+      "Water",
+      "Sesame Oil",
+      "Thick Noodles",
+      "Triangular Fish Block",
+      "Shichimi"
+    ],
+    "recipe": [
+      "Peel and slice the garlic.",
+      "Peel and slice the shallot into thin strips.",
+      "Heat oil and add the shallots and garlic, frying over low heat until golden brown.",
+      "Combine dark soy sauce, soy sauce, oyster sauce, sugar, chicken powder, and water, and bring to a boil.",
+      "Strain the fried shallots and garlic from the oil, then mix in the sesame oil and set aside.",
+      "Heat oil in a pot and fry the triangular fish blocks over medium heat until golden brown.",
+      "Bring water to a boil, add the thick noodles, cook until done, and then rinse with cold water.",
+      "Return the thick noodles to hot water for a few seconds, then remove.",
+      "Add about 1 tbsp of the soy sauce mixture and mix well.",
+      "Add the shallot and garlic oil and mix well.",
+      "Add the fish blocks, shichimi, and fried shallots and garlic to serve, and it's done."
+    ],
+    "difficulty": "簡單 (Easy)",
+    "time": "30min",
+    "note": "",
+    "tags": [
+      "HongKong"
+    ]
+  },
+  {
+    "name": "Cheese Cream Shrimp Pasta",
+    "item": [
+      "1 Person",
+      "Fettuccine or Pappardelle",
+      "Garlic",
+      "Lemon",
+      "Unsalted Butter",
+      "Shrimp",
+      "Whipping Cream or Heavy Cream",
+      "Salt",
+      "Parmesan Cheese",
+      "Black Pepper"
+    ],
+    "recipe": [
+      "Boil water with salt, cook fettuccine according to package instructions minus one minute.",
+      "Peel and crush the garlic and set aside.",
+      "Zest the lemon, slice it, and remove the seeds.",
+      "Melt the butter, add garlic and lemon slices, and mix well.",
+      "Add the shrimp and stir-fry until cooked, then set aside, removing the lemon slices and garlic.",
+      "Heat the whipping cream with salt over low heat, stirring well.",
+      "Add the shrimp, lemon zest, and Parmesan cheese, and mix well.",
+      "Add the fettuccine, mix well over low heat, and serve.",
+      "Sprinkle with a little black pepper and Parmesan cheese, and it’s done."
+    ],
+    "difficulty": "Hard",
+    "time": "90 min",
+    "note": "2 day meal",
+    "tags": [
+      "Italy"
+    ]
+  },
+  {
+    "name": "Seafood Cheese Pasta",
+    "item": [
+      "Serve 1",
+      "Unsalted Butter",
+      "Flour",
+      "Milk",
+      "Salt",
+      "Sugar",
+      "Shredded Parmesan Cheese",
+      "Fettuccine",
+      "Garlic",
+      "Mixed Seafood",
+      "Salt",
+      "Black Pepper",
+      "White Wine",
+      "Shredded Mozzarella Cheese"
+    ],
+    "recipe": [
+      "Melt the butter and add the flour, mixing well.",
+      "Once the butter bubbles, gradually add the milk while mixing.",
+      "Add salt and sugar, mixing until it boils and thickens.",
+      "Add the shredded Parmesan cheese and mix well, then set aside.",
+      "Boil water with salt and cook the fettuccine according to package instructions.",
+      "Peel and mince the garlic.",
+      "Season the seafood with salt and black pepper and set aside.",
+      "Drain the cooked fettuccine and set aside.",
+      "Heat oil, sauté the minced garlic until fragrant, then add the seafood and stir-fry.",
+      "Add white wine and fettuccine, mixing well.",
+      "Reduce the heat and add the white sauce, mixing thoroughly.",
+      "Transfer the fettuccine to an oven-safe dish and top with shredded mozzarella cheese.",
+      "Preheat the oven and bake at the highest setting for 5-10 minutes until the top is golden brown."
+    ],
+    "difficulty": "Medium",
+    "time": "45min",
+    "note": "",
+    "tags": [
+      "Italy"
+    ]
+  },
+  {
+    "name": "Guanciale Tomato Pasta",
+    "item": [
+      "Serve 1",
+      "Guanciale",
+      "Red Pepper Flakes",
+      "Black Pepper",
+      "Salt",
+      "White Wine",
+      "Canned Tomato",
+      "Pecorino Romano",
+      "Salt",
+      "Water",
+      "Pasta"
+    ],
+    "recipe": [
+      "Introduction to Guanciale Tomato Pasta.",
+      "Bring 1 liter of water with ¼ tsp of salt to a boil, add the pasta, and cook according to package instructions, reserving the pasta water.",
+      "Slice the guanciale into small pieces and set aside.",
+      "Grate the cheese and set aside.",
+      "Sauté the guanciale until the fat is rendered.",
+      "Add black pepper, red pepper flakes, and white wine.",
+      "Add the canned tomatoes, cover, and cook until thickened, adjusting seasoning as needed.",
+      "Add the pasta and enough reserved pasta water, cooking until the sauce reduces.",
+      "Mix in the cheese and plate.",
+      "Sprinkle additional cheese on top of the pasta."
+    ],
+    "difficulty": "Medium",
+    "time": "45min",
+    "note": "",
+    "tags": [
+      "Italy"
+    ]
+  },
+  {
+    "name": "Porcini Cream Pasta",
+    "item": [
+      "Serve 1-2",
+      "Dried Porcini Mushroom",
+      "Garlic",
+      "Fettuccine",
+      "Salt",
+      "Black Pepper",
+      "White Wine",
+      "Whipping Cream",
+      "Parmigiano Reggiano"
+    ],
+    "recipe": [
+      "Soak the dried porcini mushrooms in water for about 30 minutes, then drain and chop finely.",
+      "Peel and mince the garlic and set aside.",
+      "Bring a pot of water to a boil, add salt and cook the fettuccine according to package instructions.",
+      "Heat oil in a pan and sauté the minced garlic until fragrant.",
+      "Add the chopped porcini mushrooms and salt, and sauté over medium heat.",
+      "Add black pepper and cook until the porcini mushrooms are slightly softened.",
+      "Add white wine and whipping cream, stirring to combine.",
+      "Add the cooked fettuccine and adjust with reserved pasta water as needed, then turn off the heat.",
+      "Mix in the Parmigiano Reggiano and plate to serve."
+    ],
+    "difficulty": "Medium",
+    "time": "45min",
+    "note": "",
+    "tags": [
+      "Italy"
+    ]
+  },
+  {
+    "name": "Mocha",
+    "item": [
+      "Coffee Powder",
+      "Coco Powder",
+      "Milk"
+    ],
+    "recipe": [],
+    "difficulty": "Easy",
+    "time": "10min - 15 min",
+    "note": "",
+    "tags": [
+      "Drink"
+    ]
+  },
+  {
+    "name": "Pudding",
+    "item": [
+      "5 x 6cm",
+      "Sugar",
+      "Water",
+      "Hot Water",
+      "Whole Eggs",
+      "Egg Yolks",
+      "Milk",
+      "Sugar",
+      "Vanilla Extract"
+    ],
+    "recipe": [
+      "In a pot, mix 30g of sugar with 3 tablespoons of water. Heat until deep brown. Add 3 tablespoons of hot water to the caramel syrup and pour it into the pudding mold.",
+      "In a bowl, whisk together 2 whole eggs, 2 egg yolks, and 1 teaspoon of vanilla extract.",
+      "In another microwave-safe bowl or pot, heat 35g sugar and 250g milk for 1 minute 30 seconds, or until the sugar is completely dissolved.",
+      "Gradually pour the milk mixture into the beaten eggs while stirring. Strain the mixture twice to ensure a smooth and creamy texture.",
+      "280°F",
+      "Let the pudding cool for a few minutes, then refrigerate for at least 6 hours."
+    ],
+    "difficulty": "Medium",
+    "time": "7 hr 30 min",
+    "note": "這道布丁口感滑順，非常美味. This pudding has a smooth texture and is very delicious.",
+    "tags": [
+      "Dessert",
+      "Japanese"
+    ]
+  },
+  {
+    "name": "No-bake Strawberry Cheesecake",
+    "item": [
+      "15cm",
+      "Melted Butter",
+      "Cream Cheese",
+      "Sour Cream",
+      "Sugar",
+      "Milk",
+      "Gelatin",
+      "Strawberry Purée",
+      "Heavy Cream",
+      "Sugar",
+      "Strawberry",
+      "Sugar",
+      "Lemon Juice",
+      "Strawberry Purée",
+      "Water",
+      "Gelatin",
+      "Water",
+      "Lemon Juice",
+      "Sugar",
+      "Gelatin"
+    ],
+    "recipe": [
+      "Crush the biscuits and mix with melted butter. Press into the bottom of the mold.",
+      "Mix cream cheese, sour cream, sugar, and milk together.",
+      "Dissolve gelatin in water and add to the mixture.",
+      "Add strawberry purée and mix well.",
+      "Whip heavy cream and sugar, then fold into the mixture.",
+      "Pour the mixture into the prepared mold and refrigerate.",
+      "To make strawberry purée: blend strawberries, sugar, and lemon juice.",
+      "To make strawberry jelly: mix strawberry purée, water, and gelatin.",
+      "To make lemon jelly: mix water, lemon juice, sugar, and gelatin.",
+      "Chill the jelly and top it on the cheesecake."
+    ],
+    "difficulty": "Hard",
+    "time": "120 min",
+    "note": "This rare cheesecake has a refreshing taste, perfect for dessert.",
+    "tags": [
+      "Dessert"
+    ]
+  },
+  {
+    "name": "Chocolate Cookies",
+    "item": [
+      "6 pcs",
+      "Chocolate Chunks",
+      "Soft Brown Sugar",
+      "Trehalose",
+      "Salt",
+      "Vanilla Extract",
+      "Cake Flour",
+      "Cocoa Powder",
+      "Baking Soda",
+      "Unsalted Butter",
+      "Egg"
+    ],
+    "recipe": [
+      "Melt the butter and set aside.",
+      "Chop the chocolate chunks and set aside.",
+      "Beat the egg and set aside.",
+      "Mix the flour, cocoa powder, and baking soda.",
+      "Add soft brown sugar, sugar/trehalose, and salt, and mix well.",
+      "Add vanilla extract and chocolate chunks, and mix well.",
+      "Add the melted butter and beaten egg, and mix until there are no flour lumps.",
+      "Let it rest for about half an hour, and preheat the oven to 180°C.",
+      "Divide the dough into six pieces (about 40g each",
+      "* Ensure enough space between the cookies.",
+      "Bake for about 3-5 minutes, and it's done."
+    ],
+    "difficulty": "Easy",
+    "time": "40min",
+    "note": "",
+    "tags": [
+      "Dessert"
+    ]
+  },
+  {
+    "name": "Peach Resin and Snow Lotus Dessert",
+    "item": [
+      "Serve 2-3",
+      "Peach Resin",
+      "Snow Lotus Seed",
+      "Snow Swallow",
+      "Slab Sugar",
+      "Water",
+      "Dried Longan",
+      "Red Dates",
+      "Papaya",
+      "Osmanthus Syrup"
+    ],
+    "recipe": [
+      "Soak peach resin, snow lotus seed, and snow swallow for about 7-8 hours or overnight.",
+      "Remove impurities from peach resin and snow swallow, then rinse.",
+      "Cut the red dates in half and remove the pits, soak the dried longan for about 10 minutes.",
+      "Cut off the top of the papaya and scoop out the seeds and flesh.",
+      "Add water, slab sugar, red dates, and dried longan to a pot and bring to a boil.",
+      "Add peach resin and snow swallow, and cook for about 10-15 minutes.",
+      "Finally, add snow lotus seed and osmanthus syrup, and cook for about 1 minute.",
+      "Pour the syrup into the papaya bowl and steam over medium-low heat for about 5-10 minutes, and it's done."
+    ],
+    "difficulty": "Medium",
+    "time": "30min",
+    "note": "",
+    "tags": [
+      "Dessert",
+      "Chinese"
+    ]
+  },
+  {
+    "name": "Golden Monk Fruit Sweet Soup",
+    "item": [
+      "Serve 1",
+      "Golden Monk Fruit",
+      "Water",
+      "Snow Fungus",
+      "Longan Aril",
+      "Red Dates"
+    ],
+    "recipe": [
+      "Wash the monk fruit and break it into small pieces.",
+      "Add the monk fruit and water, then boil for about half an hour and strain.",
+      "Soak the snow fungus until soft, tear it apart, and trim away the harder parts.",
+      "Add the monk fruit water, snow fungus, red dates, and longan to a pot, cover, and cook for about half an hour.",
+      "Adjust the consistency and flavor by adding more water as needed and stir to finish."
+    ],
+    "difficulty": "Easy",
+    "time": "1Hr",
+    "note": "",
+    "tags": [
+      "Dessert",
+      "Chinese"
+    ]
+  },
+  {
+    "name": "Brown Sugar Glutinous Rice Cakes",
+    "item": [
+      "Serve 7-8 pcs",
+      "Glutinous Rice Flour",
+      "Hot Water",
+      "Water",
+      "Sugar",
+      "Brown Sugar",
+      "Water",
+      "Salt",
+      "Soy Bean Powder"
+    ],
+    "recipe": [
+      "Combine 40 ml of hot water and sugar with the glutinous rice flour and mix well.",
+      "Add about 30 ml of water and mix until a dough forms.",
+      "Wrap the dough in plastic wrap, roll it out into a rectangle, and cut into strips.",
+      "Cook the brown sugar, water, and salt over low heat until thickened, then turn off the heat.",
+      "Heat oil in a pan and fry the dough strips over medium-low heat until golden brown, then remove.",
+      "Sprinkle the surface of the rice cakes with soy bean powder and drizzle with the brown sugar syrup to finish."
+    ],
+    "difficulty": "Medium",
+    "time": "30min",
+    "note": "",
+    "tags": [
+      "Dessert",
+      "Chinese"
+    ]
+  },
+  {
+    "name": "Pancakes",
+    "item": [
+      "Serve 3 pcs",
+      "Cake Flour",
+      "Baking Powder",
+      "Sugar",
+      "Egg",
+      "Milk",
+      "Melted Butter"
+    ],
+    "recipe": [
+      "Beat the egg with milk and melted butter.",
+      "Then combine the cake flour, baking powder, and sugar until smooth.",
+      "Pour the liquid mixture into the dry ingredients and stir until smooth.",
+      "Heat a non-stick pan and gently pour in the batter; cook until bubbles form on the surface, then flip.",
+      "Cook both sides until golden brown, then serve."
+    ],
+    "difficulty": "簡單 (Easy)",
+    "time": "20min",
+    "note": "",
+    "tags": [
+      "Dessert"
+    ]
+  },
+  {
+    "name": "Basque Burnt Cheesecake",
+    "item": [
+      "Serve 6 inch",
+      "Egg Yolk",
+      "Honey",
+      "Vegetable Oil",
+      "Milk",
+      "Cake Flour",
+      "Egg White",
+      "Sugar",
+      "Unsalted Butter",
+      "Milk",
+      "Honey",
+      "Sliced Cheese"
+    ],
+    "recipe": [
+      "Separate the egg yolks from the egg whites.",
+      "Mix the egg yolks, honey, and milk together.",
+      "Add the sifted cake flour and mix until there are no lumps.",
+      "Preheat the oven to 170°C and line the cake pan with parchment paper.",
+      "Beat the egg whites with sugar until stiff peaks form.",
+      "Gradually fold the meringue into the egg yolk mixture using a cutting motion.",
+      "Add the vegetable oil and mix gently.",
+      "Pour the batter into the cake pan and gently tap to level.",
+      "Bake at 170°C for 15 minutes, then lower the temperature to 150°C and bake for another 25 minutes, rotating the cake halfway for even cooking.",
+      "Remove the cake from the oven, invert to cool, unmold, and gently brush off any crumbs.",
+      "Melt the sliced cheese, unsalted butter, honey, and milk over low heat, while preheating the oven to 220°C.",
+      "Spread the cheese mixture evenly over the surface of the cake.",
+      "Bake at 220°C for 3-4 minutes until the surface is slightly charred, then it's done."
+    ],
+    "difficulty": "Medium",
+    "time": "1Hr",
+    "note": "",
+    "tags": [
+      "Dessert"
+    ]
+  },
+  {
+    "name": "Japanese Teriyaki Sauce",
+    "item": [
+      "Soy Sauce",
+      "Sugar",
+      "Sesame Oil",
+      "Rice Vinegar",
+      "Starch",
+      "Water"
+    ],
+    "recipe": [
+      "Combine soy sauce, sugar, and sesame oil in a bowl.",
+      "Heat a pot over low heat.",
+      "Dissolve the starch in water.",
+      "Pour the soy sauce mixture into the pot.",
+      "Heat over low and then add the starch water to the pot."
+    ],
+    "difficulty": "Easy",
+    "time": "5 min",
+    "note": "",
+    "tags": [
+      "Sauce",
+      "Japanese"
+    ]
+  }
+]
