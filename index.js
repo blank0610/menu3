@@ -20,7 +20,7 @@ calculateShoppingList();
 
 
 function loadDefaultData() {
-        fetch('menuData.json') // 调整路径如果需要
+        fetch('en_menu.json') // 调整路径如果需要
             .then(response => response.json()) // 解析 JSON 响应
             .then(data => {
                 mergeMenuData(data); // 合并获取的菜单数据
