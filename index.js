@@ -2,34 +2,26 @@ let menuData = {}; // 菜单数据对象
 let calendarData = []; // 日历数据数组
 
 
-
-// 每种菜系的背景图
-
-// 从文件中获取 JSON 数据
 function init() {
-    // 🔥 Always load background first so it shows on first page load
+    // 背景
     setBackground();
 
-    // Load saved dishes from localStorage (if any)
+    // 菜单 & 日历
     loadFromLocalStorage();
-
-    // Load calendar data
     loadCalendarFromLocalStorage();
 
-    // 🔥 If there is no saved menuData, automatically load default dishes
     if (!menuData || Object.keys(menuData).length === 0) {
         console.log("No menuData found — loading default data...");
-        loadDefaultData(); // This will also trigger display functions after loading
+        loadDefaultData();
     } else {
-        // Otherwise show existing saved data
         displayMenuItems();
         displayAllDishes();
         displayCalendarItems();
     }
 
-    // Shopping list always calculated
     calculateShoppingList();
 }
+
 
 
 
