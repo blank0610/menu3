@@ -50,35 +50,36 @@ function loadDefaultData() {
             .catch(error => console.error('Error loading the JSON data:', error)); // 错误处理
     }
 
-    const backgroundImages = {
-        Chinese: "url('png/cn8.jpg')", // 中餐背景图
-        Japanese: "url('png/jp3.jpg')", // 日本餐背景图
-        HongKong: "url('png/hk5.jpg')", // 香港餐背景图
-        Italy: "url('png/italy5.jpg')", // 意大利餐背景图
-        Western: "url('png/w1.png')",
-        Dessert: "url('png/d6.jpg')", // 甜点背景图
-        Drink: "url('png/drink3.jpg')", // 饮料背景图
-        Sauce: "url('png/s4.jpg')", // 酱料背景图
-        alldish: "url('png/cal10.png')", // 所有菜品背景图
-        index: "url('png/cal11.png')" // 首页背景图
-    };
-    
-    const landscapeBackgroundImages = {
-        Chinese: "url('png/cnv1.jpg')", // 中餐横屏背景图
-        Japanese: "url('png/jpv1.jpg')", // 日本餐横屏背景图
-        HongKong: "url('png/hkv2.jpg')", // 香港餐横屏背景图
-        Italy: "url('png/iv3.jpg')", // 意大利餐横屏背景图
-        Dessert: "url('png/dv5.jpg')", // 甜点横屏背景图
-        Drink: "url('png/drinkv1.jpg')", // 饮料横屏背景图
-        Sauce: "url('png/sv2.jpg')", // 酱料横屏背景图
-        Western: "url('png/wv1.png')",
-        alldish: "url('png/mainv.jpg')", // 所有菜品横屏背景图
-        index: "url('png/calv3.png')" // 首页横屏背景图
-    };
-    
-    const urlParams = new URLSearchParams(window.location.search); // 获取 URL 参数
-    const style = urlParams.get('style'); // 获取样式参数
-    
+const backgroundImages = {
+    Chinese: "url('png/cn8.jpg')",
+    Japanese: "url('png/jp3.jpg')",
+    HongKong: "url('png/hk5.jpg')",
+    Italy: "url('png/italy5.jpg')",
+    Western: "url('png/w1.png')",
+    Dessert: "url('png/d6.jpg')",
+    Drink: "url('png/drink3.jpg')",
+    Sauce: "url('png/s4.jpg')",
+    alldish: "url('png/cal10.png')",
+    index: "url('png/cal11.png')"
+};
+
+const landscapeBackgroundImages = {
+    Chinese: "url('png/cnv1.jpg')",
+    Japanese: "url('png/jpv1.jpg')",
+    HongKong: "url('png/hkv2.jpg')",
+    Italy: "url('png/iv3.jpg')",
+    Dessert: "url('png/dv5.jpg')",
+    Drink: "url('png/drinkv1.jpg')",
+    Sauce: "url('png/sv2.jpg')",
+    Western: "url('png/wv1.png')",
+    alldish: "url('png/mainv.jpg')",
+    index: "url('png/calv3.png')"
+};
+
+const urlParams = new URLSearchParams(window.location.search); // 获取 URL 参数
+// 默认用 index，这样第一次进 index.html 没有 ?style= 也会有背景图
+const style = urlParams.get('style') || 'index'; // 获取样式参数
+
     
 
 // 根据样式和设备类型设置背景
