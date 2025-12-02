@@ -7,15 +7,30 @@ let calendarData = []; // 日历数据数组
 
 // 从文件中获取 JSON 数据
 function init() {
-loadFromLocalStorage();
-loadCalendarFromLocalStorage(); // Load calendar data from local storage
-displayMenuItems(); // Display specific cuisine menu items
-displayAllDishes(); // Display all dishes
-displayCalendarItems();
-setBackground();
-calculateShoppingList();
+    // Load saved dishes from localStorage (if any)
+    loadFromLocalStorage();
 
+    // Always load calendar data
+    loadCalendarFromLocalStorage();
+
+    // 🟢 If there is no menuData saved, automatically load default dishes
+    if (!menuData || Object.keys(menuData).length === 0) {
+        console.log("No menuData found — loading default data...");
+        // This will fetch en_menu.json, merge it, save to localStorage,
+        // and call displayMenuItems(), displayAllDishes(), displayCalendarItems()
+        loadDefaultData();
+    } else {
+        // If menuData already exists, just show it
+        displayMenuItems();      // Show current style menu (for menu.html)
+        displayAllDishes();      // Show all dishes (for alldish.html)
+        displayCalendarItems();  // Show calendar dishes (for index.html)
+    }
+
+    // Background & shopping list are independent of default dishes
+    setBackground();
+    calculateShoppingList();
 }
+
 
 
 
